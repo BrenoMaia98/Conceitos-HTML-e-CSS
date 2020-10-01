@@ -1,0 +1,91 @@
+.referencesTitle {
+  margin: 50px;
+  text-align: center;
+}
+
+.references {
+  margin: 50px;
+  padding-inline-start: 30px;
+  list-style-type: square;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.referenceBtn {
+  margin: 10px;
+  padding: 10px;
+  width: fit-content;
+  border-radius: 10px;
+
+  display: inline-flex;
+  justify-content: center;
+
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+
+  background-image: radial-gradient(
+    circle,
+    #000000,
+    #320e17,
+    #5f0a1d,
+    #8b001a,
+    #b50606
+  );
+}
+
+.otterImg {
+  width: 300px;
+  height: 300px;
+}
+
+.otterImgContainer img {
+  background-color: rgba(0, 0, 0, 0);
+  width: 300px;
+  height: 300px;
+  -webkit-filter: sepia(80%);
+  filter: sepia(80%);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.otterImgContainer img:hover {
+  -webkit-filter: sepia(0);
+  filter: sepia(0);
+}
+.otterImgContainer img:active {
+  -webkit-filter: sepia(0);
+  filter: sepia(0);
+}
+
+.wolfContainer {
+  width: 300px;
+  height: 300px;
+}
+.wolfImg {
+  background-image: url(./images/wolf1.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  clip-path: url(#wolfClip);
+  width: 100%;
+  height: 100%;
+}
+
+.banContainer {
+  width: 500px;
+  height: 400px;
+}
+
+.banImg {
+  background-image: url(./images/ban.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  clip-path: url(#banClip);
+  width: 100%;
+  height: 100%;
+  /* width: 22.305em;
+  height: 31.305em; */
+}

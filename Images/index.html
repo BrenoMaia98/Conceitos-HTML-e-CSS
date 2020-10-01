@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images HTML</title>
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="./images.css" />
+  </head>
+  
+  <body>
+    <h2 class="referencesTitle">Um exemplo de utilização conjunta da tag <span>< img></span> e efeitos <abbr title="Cascading Style Sheets">CSS</abbr>,
+      <br>Os demais, utilizam SVG's para renderização dos efeitos.
+    </h2>
+  <div class="row">
+
+    <div class="otterImgContainer">
+      <img class="otterImg" alt="Otter With Flower" src="images/otterWithFlower.png" />
+    </div>
+
+    <div class="wolfContainer">
+      <div class="wolfImg"></div>
+
+      <svg style="overflow: visible;" width="100%" height="100%" >
+        <clipPath id="wolfClip">
+          <rect y="0%" width="100%" height="9%" />
+          <rect y="10%" width="100%" height="9%" />
+          <rect y="20%" width="100%" height="9%" />
+          <rect y="30%" width="100%" height="9%" />
+          <rect y="40%" width="100%" height="9%" />
+          <rect y="50%" width="100%" height="9%" />
+          <rect y="60%" width="100%" height="9%" />
+          <rect y="70%" width="100%" height="9%" />
+          <rect y="80%" width="100%" height="9%" />
+          <rect y="90%" width="100%" height="9%" />
+          <rect y="100%" width="100%" height="9%" />
+        </clipPath>
+      </svg>
+    </div>
+    <div class="banContainer">
+      <div class="banImg"></div>
+      <svg style="overflow: visible;" width="100%" height="100%" ">
+        <clipPath id="banClip">
+          <rect x="15.45%" y="43.00%" width=" 60.39%" height=" 13.80%" />
+          <rect x="5.34%" y="66.40%" width=" 26.97%" height=" 19.60%" />
+          <rect x="13.20%" y="29.20%" width=" 48.03%" height=" 11.00%" />
+          <rect x="0.00%" y="15.80%" width=" 64.89%" height=" 11.00%" />
+          <rect x="66.85%" y="15.80%" width=" 33.15%" height=" 7.00%" />
+          <rect x="57.30%" y="42.20%" width=" 35.96%" height=" 31.60%" />
+          <rect x="37.08%" y="44.60%" width=" 16.01%" height=" 52.40%" />
+          <rect x="5.34%" y="44.60%" width=" 26.97%" height=" 16.80%" />
+          <rect x="57.87%" y="78.60%" width=" 42.13%" height=" 21.40%" />
+          <rect x="0.00%" y="88.20%" width=" 33.43%" height=" 11.80%" />
+          <rect x="66.85%" y="34.80%" width=" 33.15%" height=" 5.40%" />
+        </clipPath>
+      </svg>
+    </div>
+  </div>
+
+  <div>
+    <ul class="references">
+      <li><a class="referenceBtn" href="https://codepen.io/nxworld/pen/ZYNOBZ"
+          target="_blank">15 efeitos de hover com imagens</a></li>
+      <li><a class="referenceBtn" href="https://codepen.io/mxttsco/pen/NNQbWa"
+          target="_blank">Galeria com links</a></li>
+      <li><a class="referenceBtn" href="https://codepen.io/melnik909/pen/QgPpeg"
+          target="_blank">Hover com texto</a></li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <ul class="menu_container">
+      <li>
+        <a href="../">Início</a>
+      </li>
+      <li>
+        <a href="../Texts/">Voltar</a>
+      </li>
+      <li>
+        <a href="../Images">Próximo passo</a>
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>
