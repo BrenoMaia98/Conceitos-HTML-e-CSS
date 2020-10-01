@@ -1,3 +1,7 @@
+span {
+  color: black;
+  background-color: unset;
+}
 .btn {
   width: 300px;
   height: 3em;
