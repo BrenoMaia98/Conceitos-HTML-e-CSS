@@ -1,11 +1,21 @@
+body {
+  overflow-x: hidden;
+  padding-bottom: 50px;
+}
+.row {
+  padding: 0px;
+  margin: 0px;
+  align-items: unset;
+}
 .container {
-  width: 300px;
+  width: 40vw;
+  margin: 20px;
 }
 .content_title {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 2em;
   text-align: center;
-  width: 300px;
+  width: 40vw;
   background-color: white;
   border: 1px solid black;
 }
@@ -34,11 +44,6 @@ p {
   line-height: 1.5em;
 }
 
-span {
-  color: rgb(255, 0, 0);
-  background-color: rgb(223, 219, 219);
-  padding: 0px 4px;
-}
 li {
   padding: 5px 0px;
 }
@@ -58,6 +63,7 @@ blockquote {
 hr.solid {
   margin: 20px 5px;
   border-top: 2px solid #bbb;
+  width: 100%;
 }
 .grayBG {
   background-color: rgb(189, 189, 189);
