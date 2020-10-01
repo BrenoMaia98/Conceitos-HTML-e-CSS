@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Sniglet:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+body {
+  background-image: linear-gradient(
+    to bottom,
+    #6200ff90,
+    #498ac190,
+    #00c5e590,
+    #51fbde90
+  );
+  height: 100vh;
+  background-repeat: no-repeat;
+  /* overflow-y: hidden; */
+}
+.index_content {
+  flex-direction: column;
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  padding: 50px;
+  height: 100%;
+}
+
+.title {
+  font-family: "Sniglet", cursive;
+  font-size: 3em;
+  text-align: center;
+  margin: 24px 0px;
+}
+
+.index_text {
+  font-size: 2em;
+  text-align: center;
+  word-wrap: inherit;
+  font-family: "Homemade Apple", cursive;
+}
+
+.press_start {
+  text-align: center;
+  align-self: center;
+  cursor: pointer;
+
+  font-family: "Permanent Marker", cursive;
+  font-size: 2em;
+
+  color: #fff;
+  background-color: black;
+
+  border-radius: 20px;
+  width: 300px;
+  padding: 30px;
+}
+.press_start:hover {
+  background-color: rgb(255, 51, 0);
+  color: black;
+  transition: 0.5s ease;
+}
