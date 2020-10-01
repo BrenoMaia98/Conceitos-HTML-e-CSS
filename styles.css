@@ -17,7 +17,7 @@ body {
   );
   height: 100vh;
   background-repeat: no-repeat;
-  /* overflow-y: hidden; */
+  overflow-y: hidden;
 }
 .index_content {
   flex-direction: column;
