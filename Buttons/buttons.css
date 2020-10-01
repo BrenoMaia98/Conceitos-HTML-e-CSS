@@ -1,0 +1,97 @@
+.btn {
+  width: 300px;
+  height: 3em;
+  margin: 20px;
+  border: 1px solid gray;
+  font-size: 2em;
+  cursor: pointer;
+
+  /* outline: none; */
+}
+
+.squareBtn {
+  background-color: aqua;
+}
+
+.radiusBtn {
+  background-color: beige;
+  border-radius: 30px;
+}
+
+.roundBtn {
+  background-color: brown;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+}
+
+.disabledBtn {
+  background-color: rgb(37, 37, 37);
+  color: white;
+  cursor: not-allowed;
+}
+
+/* ↓ ↓ Hover and animation ↓ ↓ */
+
+.hoverBtn {
+  background-color: #9acd32;
+  letter-spacing: 0px;
+}
+
+.hoverBtn:hover {
+  background-color: #6532cd;
+  letter-spacing: 5px;
+  transition: 0.5s;
+}
+
+.animatedHoverBtn {
+  background-color: steelblue;
+}
+
+.btn span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span::before {
+  content: "☻♥";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -2em;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-left: 2em;
+}
+
+.btn:hover span:before {
+  opacity: 1;
+  left: 0;
+}
+
+.animatedHoverBtn {
+}
+
+.animatedClickBtn {
+  outline: none;
+  color: #fff;
+  background-color: #b91690;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 9px 9px #999;
+}
+
+.animatedClickBtn:hover {
+  background-color: #9c167b;
+}
+
+.animatedClickBtn:active {
+  background-color: #3d0a30;
+  color: #ddd;
+  box-shadow: 5px 5px #666;
+  transform: translate(4px, 4px);
+  transition: 0.1s ease;
+}
