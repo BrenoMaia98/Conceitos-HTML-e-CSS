@@ -19,6 +19,12 @@
   background-color: rgb(183, 231, 250);
   list-style: none;
 }
+.codes a {
+  text-decoration: underline;
+  color: rgb(23, 23, 134);
+  display: flex;
+  padding: 6px;
+}
 
 .codes li {
   display: inline-block;
