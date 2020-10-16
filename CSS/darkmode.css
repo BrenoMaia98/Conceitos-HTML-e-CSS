@@ -1,15 +1,18 @@
 #main {
-  width: 100vw;
-  height: 100vh;
   background: #000;
-  margin-top: -15vw;
-  padding-top: 20vw;
+  padding-top: 1rem;
+  margin: 1rem;
+  border-radius: 20px;
+  box-shadow: 0 0.3em 0.3em rgb(184, 149, 194);
+  max-width: 100vw;
 }
-#btn:checked ~ #main {
+
+/* ~ está selecionando um #main que seja adjacente ao btn*/
+#btn-dark-mode:checked ~ #main {
   transition: 0.5s all;
   filter: invert(1) hue-rotate(210deg);
 }
-#btn {
+#btn-dark-mode {
   z-index: 3;
   width: 10vw;
   height: 4vw;
@@ -23,7 +26,7 @@
   border-radius: 2.5vw;
   background: white;
 }
-input[type="checkbox"]:before {
+#btn-dark-mode[type="checkbox"]:before {
   content: "";
   position: absolute;
   width: 3vw;
@@ -34,27 +37,27 @@ input[type="checkbox"]:before {
   top: 0.5vw;
   transition: 0.5s;
 }
-input:checked[type="checkbox"] {
+
+#btn-dark-mode:checked[type="checkbox"] {
   box-shadow: inset 0 0 100px rgba(0, 0, 0, 1);
 }
-input:checked[type="checkbox"]:before {
+
+#btn-dark-mode:checked[type="checkbox"]:before {
   left: 6.5vw;
   background: white;
 }
+
 h1 {
   text-align: center;
 }
 #first-line {
   font-size: 6.5vw;
-  font-family: "Signika", sans-serif;
-  margin-top: 10vw;
-  margin-left: 2vw;
+  font-family: sans-serif;
   color: #457b9d;
 }
 #second-line {
   font-size: 10vw;
-  font-family: "Poppins", sans-serif;
-  margin-top: -5vw;
+  font-family: sans-serif;
   color: rgba(168, 218, 220, 0.2);
 }
 #mid {
