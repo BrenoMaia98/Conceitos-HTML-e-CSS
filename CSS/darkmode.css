@@ -17,12 +17,12 @@
   width: 10vw;
   height: 4vw;
   -webkit-appearance: none;
-  position: absolute;
+  position: relative;
   outline: none;
   border: none;
   cursor: pointer;
-  left: 85vw;
-  top: 5vw;
+  left: 80vw;
+  top: 16vw;
   border-radius: 2.5vw;
   background: white;
 }

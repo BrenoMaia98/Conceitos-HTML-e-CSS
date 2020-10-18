@@ -2,6 +2,7 @@
   margin: 0px;
 }
 
+/* Container geral para exemplos */
 .content {
   display: flex;
   align-items: center;
@@ -11,6 +12,65 @@
   margin: auto;
   border-radius: 1rem;
 }
+
+.content > h2 {
+  color: rgb(121, 121, 121);
+  font-family: sans-serif;
+  margin-bottom: 1rem;
+}
+
+.content > h2 > span {
+  color: #000;
+  font-size: 1.4em;
+}
+
+.content > h2 > span::before {
+  content: " - ";
+}
+
+/* Adicionando comentários através de span */
+code > span {
+  user-select: none;
+  color: rgb(121, 121, 121);
+}
+code > span::before {
+  content: "/*";
+}
+
+code > span::after {
+  content: "*/";
+}
+
+/* Example 01 */
+
+#example-element-size {
+  padding: 3em;
+  background-color: rgb(253, 202, 253);
+  flex-direction: column;
+}
+.div-example01 {
+  height: 100px;
+  width: 200px;
+  border-radius: 20px;
+
+  border-color: #ff0000;
+  border-width: 3px;
+  border-style: solid;
+
+  background-color: #ff0;
+}
+
+#example-element-size > p {
+  margin: 1em;
+}
+
+#example-element-size code {
+  padding: 0.5em;
+  font-size: 1.3em;
+  background-color: #fff;
+}
+
+/* External Links */
 
 .codes {
   border-radius: 1rem;
@@ -38,12 +98,6 @@
 .codes li code {
   padding-left: 10%;
 }
-@media screen and (max-width: 700px) {
-  .codes li {
-    width: 90%;
-    margin: 0.5em 0px;
-  }
-}
 
 /* Outras referências ↓ ↓ */
 
@@ -52,7 +106,7 @@
   margin: 10px auto;
   border-top: 1px solid #eee;
 }
-.linkContent {
+.link-content {
   padding: 1em 0px;
   display: flex;
   list-style-type: none;
@@ -62,18 +116,48 @@
   background-color: #eee3;
 }
 
-.linkContent:nth-child(even) {
+.link-content:nth-child(even) {
   background-color: #eee8;
 }
 
-.linkContent a {
+.link-content a {
   text-decoration: none;
   color: #000;
   padding: 1em;
 }
 
-.linkContent img {
+.link-content img {
   cursor: pointer;
   width: 200px;
   height: auto;
+}
+
+/* Estilização Mobile */
+
+@media screen and (max-width: 700px) {
+  /* Container geral para exemplos */
+  .content > h2 {
+    display: block;
+  }
+
+  .content > h2 > span::before {
+    content: "";
+  }
+  .content > h2 > span {
+    display: block;
+    color: #000;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  /* Adicionando comentários através de span */
+  code > span {
+    color: rgb(121, 121, 121);
+    display: block;
+  }
+
+  /* External Links */
+  .codes li {
+    width: 90%;
+    margin: 0.5em 0px;
+  }
 }
