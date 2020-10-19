@@ -9,8 +9,10 @@
   justify-content: center;
   box-shadow: 0px 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
   max-width: 80vw;
-  margin: auto;
+  margin: 2rem auto;
   border-radius: 1rem;
+  padding: 3rem;
+  flex-direction: column;
 }
 
 .content > h2 {
@@ -27,6 +29,11 @@
 .content > h2 > span::before {
   content: " - ";
 }
+.content code {
+  padding: 0.5em;
+  font-size: 1.3em;
+  background-color: #fff;
+}
 
 /* Adicionando comentários através de span */
 code > span {
@@ -41,12 +48,12 @@ code > span::after {
   content: "*/";
 }
 
-/* Example 01 */
+/*==========
+  Example 01
+  ==========*/
 
 #example-element-size {
-  padding: 3em;
   background-color: rgb(253, 202, 253);
-  flex-direction: column;
 }
 .div-example01 {
   height: 100px;
@@ -64,13 +71,60 @@ code > span::after {
   margin: 1em;
 }
 
-#example-element-size code {
-  padding: 0.5em;
-  font-size: 1.3em;
-  background-color: #fff;
+/*==========
+  Example 02
+  ==========*/
+#example-margin-padding-border {
+  background-color: rgb(170, 255, 203);
+  flex-wrap: wrap;
+}
+#example-margin-padding-border img {
+  display: inline-block;
+  height: max(25vh, 270px);
+  width: max(25vh, 270px);
+  margin: 1rem;
 }
 
-/* External Links */
+#example-row-02 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+#example-div-02 {
+  display: inline-block;
+  height: max(25vh, 250px);
+  width: max(25vh, 250px);
+  padding: 20px;
+  background-color: #c3bc98;
+  border: 0.7em solid #9c946c;
+}
+#example-div-02 div {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  background-color: #5482bb;
+}
+#example-div-02 div::before {
+  content: "CONTEÚDO";
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: clamp(1em, 1.5em, 2em);
+  color: white;
+  font-weight: 900;
+  font-family: sans-serif;
+}
+
+/*==============
+  External Links 
+  ==============*/
 
 .codes {
   border-radius: 1rem;
@@ -99,7 +153,9 @@ code > span::after {
   padding-left: 10%;
 }
 
-/* Outras referências ↓ ↓ */
+/*================
+  Other References 
+  ================*/
 
 .links {
   width: 80%;
