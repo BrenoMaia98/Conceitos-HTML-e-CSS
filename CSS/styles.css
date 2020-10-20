@@ -123,6 +123,35 @@ code > span::after {
 }
 
 /*==============
+  Exemplo 03 
+  ==============*/
+#example-element-positions {
+  background-color: #d3540029;
+}
+#example-element-positions p {
+  line-height: 2em;
+  letter-spacing: 0.1em;
+  font-size: 1.5em;
+  text-align: justify;
+}
+.container-stick {
+  height: 20vh;
+  background-color: rgba(255, 81, 0, 0.659);
+  overflow-y: scroll;
+  border: 2px solid black;
+}
+
+.div-stick {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  border: 2px solid #ffffff;
+  padding-left: 1rem;
+}
+
+/*==============
   External Links 
   ==============*/
 
