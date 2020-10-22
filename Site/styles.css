@@ -80,9 +80,9 @@ content {
   padding: 1em; /*fall-back*/
   padding: 1rem;
 
-  margin: 80px auto; /*fall-back*/
-  margin: 5em auto; /*fall-back*/
-  margin: 5rem auto;
+  margin: 32px auto; /*fall-back*/
+  margin: 2em auto; /*fall-back*/
+  margin: 2rem auto;
 }
 
 .empresa p {
@@ -112,33 +112,52 @@ content {
         Carroussel
        ---------- **/
 
-slider_container arrow_left images_preview .slider_container {
+.slider_container {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 80vw;
   width: 100vw;
+}
+
+.images_preview {
   flex-wrap: wrap;
 }
-.arrow_left::before {
-  content: "<";
-  color: red;
-  width: 10vw;
-  height: 80vh;
-}
-.arrow_right::before {
-  content: ">";
-  color: red;
 
-  width: 10vw;
+.images_preview img {
+  width: calc(80% / 3); /*100% web*/
+  height: calc(80% / 3);
+  padding: 0px;
+  margin: 0px;
 }
 
-.preview_grid img {
-  width: calc(100% / 3);
+.slider_container #arrow_left {
+  color: #f4d10c;
+  font-size: 2em;
+  font-family: "Nunito", sans-serif;
+
+  left: 2vw;
+
+  position: absolute;
+  z-index: 2;
+  border-radius: 1em;
+}
+
+.slider_container #arrow_right {
+  color: #f4d10c;
+  font-size: 2em;
+  font-family: "Nunito", sans-serif;
+
+  right: 2vw;
+
+  position: absolute;
+  z-index: 2;
+  border-radius: 1em;
 }
 
 /** -----------------
           Contato
-          ------------------ **/
+     ------------------ **/
 
 /** -----------------
           Footer
