@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@900&wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap");
+/** -----------------
+   Definições Globais
+   ------------------ **/
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+body {
+  display: block;
+  width: 100vw;
+  background-color: #222;
+}
+
+/** -----------------
+          Header
+   ------------------ **/
+
+nav {
+  background-color: rgba(83, 78, 100, 0.138);
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0px;
+}
+nav ul {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+
+  list-style: none;
+}
+
+nav li:active {
+  color: rgb(233, 233, 13);
+}
+
+nav li {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #fff;
+
+  padding: 16px; /*fall-back*/
+  padding: 1em; /*fall-back*/
+  padding: 1rem;
+}
+
+/** -----------------
+      Conteúdo
+------------------ **/
+content {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 16px; /*fall-back*/
+  padding: 1em; /*fall-back*/
+  padding: 1rem;
+}
+
+.logo {
+  width: 80vw;
+  margin-left: 10vw;
+}
+
+/** ---------
+        Sobre
+     ---------- **/
+
+.empresa {
+  border: 2px solid #fff;
+  color: white;
+  width: 80%;
+
+  padding: 16px; /*fall-back*/
+  padding: 1em; /*fall-back*/
+  padding: 1rem;
+
+  margin: 80px auto; /*fall-back*/
+  margin: 5em auto; /*fall-back*/
+  margin: 5rem auto;
+}
+
+.empresa p {
+  text-align: justify;
+  line-height: 1.7em;
+  letter-spacing: 0.05em;
+}
+
+/** ---------
+        Portfolio
+    ---------- **/
+.portfolio_section {
+  padding: 16px; /*fall-back*/
+  padding: 1em; /*fall-back*/
+  padding: 1rem;
+  width: 100%;
+}
+
+.portfolio_section h1 {
+  width: 100vw;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: #f4d10c;
+}
+
+/** ---------
+        Carroussel
+       ---------- **/
+
+slider_container arrow_left images_preview .slider_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  flex-wrap: wrap;
+}
+.arrow_left::before {
+  content: "<";
+  color: red;
+  width: 10vw;
+  height: 80vh;
+}
+.arrow_right::before {
+  content: ">";
+  color: red;
+
+  width: 10vw;
+}
+
+.preview_grid img {
+  width: calc(100% / 3);
+}
+
+/** -----------------
+          Contato
+          ------------------ **/
+
+/** -----------------
+          Footer
+   ------------------ **/
