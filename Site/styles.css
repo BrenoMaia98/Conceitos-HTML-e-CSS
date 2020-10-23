@@ -12,7 +12,15 @@
 body {
   display: block;
   width: 100vw;
+  overflow-x: none;
   background-color: #222;
+}
+
+h1 {
+  width: 100vw;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: rgb(253, 189, 46);
 }
 
 /** -----------------
@@ -21,32 +29,33 @@ body {
 
 nav {
   background-color: rgba(83, 78, 100, 0.138);
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
+  width: 100vw;
+  position: fixed;
   top: 0px;
 }
 nav ul {
   margin: 0 auto;
   width: 80%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 
   list-style: none;
 }
 
 nav li:active {
-  color: rgb(233, 233, 13);
+  color: rgb(253, 189, 46);
 }
 
 nav li {
   font-family: "Nunito", sans-serif;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: 600;
   color: #fff;
 
-  padding: 16px; /*fall-back*/
-  padding: 1em; /*fall-back*/
-  padding: 1rem;
+  padding: 8px; /*fall-back*/
+  padding: 0.5em; /*fall-back*/
+  padding: 0.5rem;
 }
 
 /** -----------------
@@ -63,6 +72,7 @@ content {
 }
 
 .logo {
+  padding-top: 5em;
   width: 80vw;
   margin-left: 10vw;
 }
@@ -94,25 +104,15 @@ content {
 /** ---------
         Portfolio
     ---------- **/
-.portfolio_section {
-  padding: 16px; /*fall-back*/
-  padding: 1em; /*fall-back*/
-  padding: 1rem;
+.portfolio-section {
   width: 100%;
-}
-
-.portfolio_section h1 {
-  width: 100vw;
-  text-align: center;
-  letter-spacing: 0.2em;
-  color: #f4d10c;
 }
 
 /** ---------
         Carroussel
        ---------- **/
 
-.slider_container {
+.slider-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,45 +120,129 @@ content {
   width: 100vw;
 }
 
-.images_preview {
+.images-preview {
   flex-wrap: wrap;
+  text-align: center;
 }
 
-.images_preview img {
-  width: calc(80% / 3); /*100% web*/
+.images-preview img {
+  width: calc(80% / 3);
   height: calc(80% / 3);
   padding: 0px;
   margin: 0px;
 }
 
-.slider_container #arrow_left {
-  color: #f4d10c;
+#arrow-left,
+#arrow-right {
+  color: rgb(253, 189, 46);
   font-size: 2em;
   font-family: "Nunito", sans-serif;
-
-  left: 2vw;
 
   position: absolute;
   z-index: 2;
   border-radius: 1em;
 }
 
-.slider_container #arrow_right {
-  color: #f4d10c;
-  font-size: 2em;
-  font-family: "Nunito", sans-serif;
+#arrow-left {
+  left: 2vw;
+}
 
+#arrow-right {
   right: 2vw;
-
-  position: absolute;
-  z-index: 2;
-  border-radius: 1em;
 }
 
 /** -----------------
           Contato
      ------------------ **/
+.contato-card {
+  background-color: rgb(42, 56, 78);
+}
+
+.contato-card h1 {
+  font-size: 1.7em;
+  padding-top: 0.5em;
+}
+
+.contato-card__content {
+  padding: 10px;
+}
+
+.contato-card__colum01 {
+  font-family: "Nunito", sans-serif;
+  color: #fff;
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contato-card__colum01 p {
+  text-align: justify;
+  line-height: 1.6em;
+}
+
+.contato-card__colum01 img {
+  width: 60px; /*fall-back*/
+  width: min(60px, 80%);
+  padding-left: 1em;
+}
+
+.contato-card__colum02 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contato-card__colum02 input {
+  padding-top: 1em;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  margin: 0.5em auto;
+  width: 80%;
+
+  outline: none;
+  background-color: #ffffff00;
+  border-bottom: 2px solid #fff;
+  color: white;
+}
+
+.send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1em;
+  width: 80%;
+  margin: 1em auto;
+
+  outline: none;
+  background-color: #ffffff00;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  color: white;
+}
+
+.send img {
+  width: 1.5em;
+  margin-left: 1em;
+}
+
+.contato-card__colum02 input:active,
+input:focus {
+  background-color: #ffffff0b;
+  border-bottom: 2px solid #fff;
+}
 
 /** -----------------
           Footer
    ------------------ **/
+
+footer {
+  background-color: rgb(17, 22, 31);
+  padding: 1.5em;
+  text-align: center;
+  color: #fff;
+}
+
+footer span {
+  color: rgb(253, 189, 46);
+}
