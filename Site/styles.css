@@ -11,30 +11,29 @@
 
 body {
   display: block;
-  width: 100vw;
-  overflow-x: none;
+  overflow-x: hidden;
   background-color: #222;
 }
 
 h1 {
-  width: 100vw;
+  width: 100%;
   text-align: center;
   letter-spacing: 0.2em;
   color: rgb(253, 189, 46);
 }
 
 /** -----------------
-          Header
+        Header
    ------------------ **/
 
 nav {
   background-color: rgba(83, 78, 100, 0.138);
-  width: 100vw;
+  width: 100%;
   position: fixed;
   top: 0px;
 }
 nav ul {
-  margin: 0 auto;
+  margin: 1em auto;
   width: 80%;
   display: flex;
   flex-wrap: wrap;
@@ -59,8 +58,8 @@ nav li {
 }
 
 /** -----------------
-      Conteúdo
------------------- **/
+        Conteúdo
+    ------------------ **/
 content {
   display: grid;
   align-items: center;
@@ -72,14 +71,13 @@ content {
 }
 
 .logo {
-  padding-top: 5em;
-  width: 80vw;
-  margin-left: 10vw;
+  width: 100%;
+  height: auto;
 }
 
 /** ---------
-        Sobre
-     ---------- **/
+      Sobre
+    ---------- **/
 
 .empresa {
   border: 2px solid #fff;
@@ -102,22 +100,21 @@ content {
 }
 
 /** ---------
-        Portfolio
+    Portfolio
     ---------- **/
 .portfolio-section {
   width: 100%;
 }
 
 /** ---------
-        Carroussel
-       ---------- **/
+    Carroussel
+    ---------- **/
 
 .slider-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vw;
-  width: 100vw;
+  padding: 1rem 0;
 }
 
 .images-preview {
@@ -144,16 +141,16 @@ content {
 }
 
 #arrow-left {
-  left: 2vw;
+  left: 2%;
 }
 
 #arrow-right {
-  right: 2vw;
+  right: 2%;
 }
 
 /** -----------------
           Contato
-     ------------------ **/
+    ------------------ **/
 .contato-card {
   background-color: rgb(42, 56, 78);
 }
