@@ -65,9 +65,6 @@ content {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 16px; /*fall-back*/
-  padding: 1em; /*fall-back*/
-  padding: 1rem;
 }
 
 .logo_container {
@@ -249,4 +246,19 @@ footer {
 
 footer span {
   color: rgb(253, 189, 46);
+}
+
+/** -----------------
+      DESKTOP
+   ------------------ **/
+
+@media (min-width: 700px) {
+  content {
+    margin: auto;
+    width: 50%;
+  }
+
+  .temporaria {
+    display: none;
+  }
 }
