@@ -12,7 +12,7 @@
 body {
   display: block;
   overflow-x: hidden;
-  background-color: #222;
+  background-color: #282828;
 }
 
 h1 {
@@ -27,7 +27,7 @@ h1 {
    ------------------ **/
 
 nav {
-  background-color: rgba(83, 78, 100, 0.138);
+  background-color: hsla(254, 12%, 35%, 0.137);
   width: 100%;
   position: fixed;
   top: 0px;
@@ -43,7 +43,7 @@ nav ul {
 }
 
 nav li:active {
-  color: rgb(253, 189, 46);
+  color: #fdbd2e;
 }
 
 nav li {
@@ -60,6 +60,10 @@ nav li {
 /** -----------------
         Conteúdo
     ------------------ **/
+.background-images {
+  display: none;
+}
+
 content {
   display: grid;
   align-items: center;
@@ -136,7 +140,7 @@ content {
 
 #arrow-left,
 #arrow-right {
-  color: rgb(253, 189, 46);
+  color: #fdbd2e;
   font-size: 2em;
   font-family: "Nunito", sans-serif;
 
@@ -157,7 +161,7 @@ content {
           Contato
     ------------------ **/
 .contato-card {
-  background-color: rgb(42, 56, 78);
+  background-color: #2a384e;
 }
 
 .contato-card h1 {
@@ -201,7 +205,7 @@ content {
   width: 80%;
 
   outline: none;
-  background-color: #ffffff00;
+  background-color: rgba(255, 255, 255, 0);
   border-bottom: 2px solid #fff;
   color: white;
 }
@@ -238,14 +242,14 @@ input:focus {
    ------------------ **/
 
 footer {
-  background-color: rgb(17, 22, 31);
+  background-color: #11161f;
   padding: 1.5em;
   text-align: center;
   color: #fff;
 }
 
 footer span {
-  color: rgb(253, 189, 46);
+  color: #fdbd2e;
 }
 
 /** -----------------
@@ -253,12 +257,98 @@ footer span {
    ------------------ **/
 
 @media (min-width: 700px) {
+  body {
+    background-color: #fff;
+  }
   content {
     margin: auto;
     width: 50%;
   }
 
-  .temporaria {
-    display: none;
+  /** -----------------
+      Plano de fundo
+   ------------------ **/
+
+  .background-images {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 2em;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
+
+  .background-image-column {
+    width: 50%;
+    position: relative;
+  }
+
+  .background-image-column:nth-child(even) img {
+    float: right;
+    margin-right: 2.5vw;
+    margin-top: 30%;
+  }
+
+  .background-images img {
+    width: calc((100vh + 30vw) / 4);
+    height: calc((100vh + 30vw) / 4);
+    float: left;
+    margin-left: 2.5vw;
+    position: relative;
+    z-index: -50;
+  }
+
+  .filter-black {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: rgba(40, 40, 40, 0.789);
+  }
+
+  @media (min-width: 1500px) {
+    .background-image-column:nth-child(even) img {
+      margin-top: 20%;
+    }
+  }
+
+  @media (min-width: 2000px) {
+    .background-image-column:nth-child(even) img {
+      margin-top: 10%;
+    }
+  }
+
+  @media (min-width: 4000px) {
+    .background-images img {
+      width: calc((100vh + 10vw) / 4);
+      height: calc((100vh + 10vw) / 4);
+    }
+  }
+  /** -----------------
+          Rotacionamento
+      ------------------ **/
+  /* .rotation_yodinha {
+    transform: rotate(0deg);
+  }
+  .rotation_bomberman {
+    transform: rotate(-10deg);
+  }
+  .rotation_cofee {
+    transform: rotate(30deg);
+  }
+  .rotation_frog {
+    transform: rotate(30deg);
+  }
+  .rotation_link {
+    transform: rotate(30deg);
+  }
+  .rotation_lolo {
+    transform: rotate(30deg);
+  }
+  .rotation_shin_chan {
+    transform: rotate(30deg);
+  } */
 }
