@@ -330,25 +330,25 @@ footer span {
   /** -----------------
           Rotacionamento
       ------------------ **/
-  /* .rotation_yodinha {
+  .rotation_yodinha {
     transform: rotate(0deg);
   }
   .rotation_bomberman {
     transform: rotate(-10deg);
   }
   .rotation_cofee {
-    transform: rotate(30deg);
+    transform: rotate(10deg);
   }
   .rotation_frog {
-    transform: rotate(30deg);
+    transform: rotate(15deg);
   }
   .rotation_link {
-    transform: rotate(30deg);
+    transform: rotate(-10deg);
   }
   .rotation_lolo {
-    transform: rotate(30deg);
+    transform: rotate(10deg);
   }
   .rotation_shin_chan {
-    transform: rotate(30deg);
-  } */
+    transform: rotate(-20deg);
+  }
 }
